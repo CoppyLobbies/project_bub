@@ -32,7 +32,14 @@ Once the work for the ticket is complete locally on your machine, `push` it to _
 ```bash
 git push
 ```
-If it is the first time you are `push`-ing your branch to __GitHub__ you may need to also set the `upstream`.  Your terminal will give you instructions on how to do so but if you have trouble, just ask.
+If it is the first time you are `push`-ing your branch to __GitHub__ you may need to also set the `upstream`.  The upstream is the name of the remote repository that you are trying to `push` to.  This will usually be `origin`.
+
+```bash
+git push --set-upstream <remote_name> <branch_name>
+
+Example:
+git push --set-upstream origin tr/1-create-spec
+```
 
 __Make sure that you are not `push`-ing to the `master` branch and only to the branch create for the issue.__
 
@@ -51,4 +58,91 @@ Once all of the comments in the PR are resolved, merging the branch to master is
 ### Step 6 - Merge to Master
 Click the *Merge* button in the PR (in __GitHub__) to merge the branch to master.  This will add all of your changes to the master branch and complete work on the current ticket.
 
+# Appendix
 
+## Using GitHub
+
+### Clone
+This allows you to `clone` a __GitHub__ repository
+```bash
+git clone git@github.com:CoppyLobbies/project_bub.git
+```
+
+### Status
+This displays the current status of your local repository
+```bash
+git status
+
+Output:
+
+On branch tr/1-create-spec
+Your branch is up-to-date with 'origin/tr/1-create-spec'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   spec/README.md
+```
+
+### Pull
+This updates your local repository to the most recent commit on your current branch
+```bash
+git pull
+```
+
+### Checkout
+Allows you to switch between local branches or create a new branch
+```bash
+git checkout <branch_name>
+
+Example:
+git checkout tr/1-create-spec
+```
+
+If you add `-b` it will create the branch locally
+```bash
+git checkout -b <new_branch_name>
+
+Example:
+git checkout -b tr/2-shorthand-desc
+```
+
+### Push
+Sends the current branch to the remote repository (__GitHub__ as `origin`).
+
+If you have already pushed the branch to the remote repository, you will just need the following command
+```bash
+git push
+```
+
+However, if you are pushing for the first time you will need to set the `upstream` which is the name of the remote repository and branch
+```bash
+git push --set-upstream <remote_name> <branch_name>
+
+Example:
+git push --set-upstream origin tr/1-create-spec
+```
+
+### Add
+This "stages" a file or selection of files so that they can be committed.  A file must be "staged" before it is committed (saved) to the repository.
+```bash
+git add <file_path>
+
+Example:
+git add file.html # adds a single file
+
+git add .         # adds all files in current directory and subfolders
+
+git add path/     # adds all files in a directory
+```
+
+### Commit
+Creates a commit or "save" with everything that was "staged" via the `git add` command and adds it to the local repository in the current branch.
+```bash
+git commit
+```
+
+This will open up a text editor in your command line that requires you to add a commit message.  Since this command line editors are hard to use at first, I would suggest adding `-m` when committing and including the message in the command
+```bash
+git commit -m "enter a message here with qoutes"
+```
