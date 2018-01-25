@@ -80,6 +80,8 @@ The following information outlines the specifications of the work. If there are 
 
 * The website must be responsive. This means that the site must adjust how it is viewed on both a web browser and a mobile browser. [Bootstrap](https://getbootstrap.com/) may help with doing this
 
+* The website will have "gutters" to the left and right to ensure that the text and assets fill the screen in a visually appealing way.
+
 * All assets (images, graphics, etc.) must be Creative Commons Zero properties.  What this means is that they are public domain and free to use and modify without attribution.
 
 * Feel free to use any other library that you would like to enhance the design.
@@ -96,14 +98,54 @@ The following information outlines the specifications of the work. If there are 
 
 ### Color Palette
 The following is the general color palette that I would like used for the site.  
-| Usage | Color HSL | Example |
-| - | - | - |
-| Background | #100005 | <div style='width: 100%; height: 15px; background: #100005'></div> |
-| Light Color| #C5305B | <div style='width: 100%; height: 15px; background: #C5305B'></div> |
-| Medium Color| #A8113C | <div style='width: 100%; height: 15px; background: #A8113C'></div> |
-| Dark Color | #101922 | <div style='width: 100%; height: 15px; background: #8B0028'></div> |
-| White | #FFFFFF | <div style='width: 100%; height: 15px; background: #FFFFFF'></div> |
-| Black | #000000 | <div style='width: 100%; height: 15px; background: #000000'></div> |
+
+[Color Palette](./swatches.html)
+
+### Site Design
+
+This site will have only a handful of sections that are outlined below.  Each section may have multiple __Issues__ raised to get the work complete.  Additionally, the content of these sections will be provided in *JSON* format and added into the section via **JavaScript**. I will help you with this step and it will be one of the last things we do. 
+
+#### Header
+The Header should be 300px - 400px tall and show either an interesting photograph, image, or pattern.  I will provide a log to place here at a later date.
+
+Overlayed to the top right of the header should be a LinkedIn, Twitter, and GitHub icons that can be clicked to navigate to the respective app.
+
+#### Page Navigation
+There should be a navigation bar directly underneath the header.  Since this is a single page site, clicking these links should simply scroll you to that location on the page.  The following links should be available:
+
+* Home => Sends to top of page
+
+* About Me => Sends to the About Me section
+
+* Contact Me => Sends to Contact Me section
+
+#### About Me
+This section will provide a brief description about me and what I do.  There should be space for a picture of me to the left with the text to the right.  My name should be an `h1` above the image and text.
+
+Expect 2-3 paragraphs of text when mocking the text.
+
+#### Section Break
+This section is going to be three columns that each have an image and some text the describe my primary skills.  This section will not have a section header.  I will provide the images at a later time.
+
+#### Contact Me
+
+This section will have information on how to contact me and should include the following:
+
+* Email Address
+* LinkedIn
+* Twitter
+
+Feel free to make this section interesting with subtle usage of graphics as you see fit.
+
+#### Footer
+
+This should include a "created by" sentance and copyright info that lets people know that you made the page and when it was created.  
+
+### Examples of Design
+
+The following are some links to pages that you a design similar to what I want:
+
+[Scientist Site](https://www.wix.com/website-template/view/html/1596?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fpersonal%2F1&bookName=create-master-new&galleryDocIndex=1&category=portfolio-cv&metaSiteId=)
 ## Appendix
 
 ## Using GitHub
